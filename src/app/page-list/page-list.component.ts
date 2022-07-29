@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { SearchResult } from "../SearchResult";
+import { SearchResult } from "../WikiResponse";
 
 @Component({
      selector: 'app-page-list',

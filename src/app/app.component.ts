@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { WikipediaService } from "./wikipedia.service";
-import { SearchResult } from "./SearchResult";
+import { SearchResult } from "./WikiResponse";
 
 @Component({
      selector: 'app-root',
@@ -14,8 +14,6 @@ export class AppComponent {
 
      onSearchEnter (term: string): void {
           this.wiki.search(term)
-               .subscribe((response: any) => {
-                    this.searchResults = response.query.search
-               })
+               .subscribe((results) => this.searchResults = results)
      }
 }
