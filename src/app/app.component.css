@@ -1,0 +1,13 @@
+.overlay {
+     position: absolute;
+     z-index: -1;
+     font-family: "Georgia";
+     font-size: 15vw;
+     font-weight: bolder;
+     letter-spacing: 1vw;
+     font-stretch: extra-expanded;
+     margin-top: 90px;
+     margin-left: 7vw;
+     color: rgba(225, 225, 225, 0.48);
+}
+
